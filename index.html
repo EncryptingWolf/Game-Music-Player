@@ -1,1 +1,10 @@
-<h1>hello</h1>
+<script>
+window.parent.postMessage("ready");
+var songs= [
+    "http://66.90.93.122/ost/super-mario-galaxy/aocgcwno/1-17%20Gusty%20Garden%20Galaxy.mp3",
+    "http://66.90.93.122/ost/the-legend-of-zelda-twilight-princess-game-rip/dfoblsvo/070%20-%20Midna%27s%20Desperation.mp3"
+];
+var randomNumber = Math.floor(Math.random()*songs.length);
+var audio = new Audio(songs[randomNumber]);
+audio.play();
+</script>
